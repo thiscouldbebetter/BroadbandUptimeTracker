@@ -1,6 +1,6 @@
 ﻿using System.Timers;
 
-namespace BroadbandUptimeTracker
+namespace NetworkConnectivityLogger
 {
 	public class Tracker
 	{
@@ -30,7 +30,7 @@ namespace BroadbandUptimeTracker
 			WriteToLog("Tracker is running.");
 			WriteToLog("Press the Enter key to quit.");
 
-			// Run it at startup to avoid waiting a whole cycle.
+			// Run it at startup to avoid waiting a whole cycle for results.
 			TimerElapsed(null, null);
 
 			Console.ReadLine();

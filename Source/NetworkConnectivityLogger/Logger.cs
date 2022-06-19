@@ -1,4 +1,4 @@
-﻿namespace BroadbandUptimeTracker
+﻿namespace NetworkConnectivityLogger
 {
 	public class Logger
 	{
