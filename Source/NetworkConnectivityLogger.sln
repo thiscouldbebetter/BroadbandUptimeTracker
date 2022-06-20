@@ -5,6 +5,11 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkConnectivityLogger", "NetworkConnectivityLogger\NetworkConnectivityLogger.csproj", "{F85FCA5C-81AF-45D2-B1EB-6F045B715751}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF29EC98-0B69-44C1-8CE7-9AF0C3A0C06A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishAsSingleFileExecutable.cmd = PublishAsSingleFileExecutable.cmd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
