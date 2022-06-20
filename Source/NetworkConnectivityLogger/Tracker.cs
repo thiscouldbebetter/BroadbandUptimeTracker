@@ -1,4 +1,5 @@
-﻿using System.Timers;
+﻿using System.Net.NetworkInformation;
+using System.Timers;
 
 namespace NetworkConnectivityLogger
 {
@@ -42,12 +43,12 @@ namespace NetworkConnectivityLogger
 		{
 			var message = "Pinging " + hostNameToPing + "...";
 			WriteToLog(message);
-			var ping = new System.Net.NetworkInformation.Ping();
+			var ping = new Ping();
 			bool wasPingSuccessful;
 			try
 			{
 				var reply = ping.Send(hostNameToPing);
-				wasPingSuccessful = (reply.Status == System.Net.NetworkInformation.IPStatus.Success);
+				wasPingSuccessful = (reply.Status == IPStatus.Success);
 			}
 			catch (Exception)
 			{
